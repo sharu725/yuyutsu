@@ -5,12 +5,14 @@
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
-    "preview": "svelte-kit preview"
+    "preview": "svelte-kit preview",
+    "deploy": "node ./gh-pages.js"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^1.0.0-next.5",
     "@sveltejs/kit": "next",
     "autoprefixer": "^10.4.0",
+    "gh-pages": "^3.2.3",
     "svelte": "^3.44.0",
     "svelte-preprocess": "^4.10.1",
     "tailwindcss": "^3.0.7",

@@ -3,7 +3,7 @@
 </script>
 
 <div class="sidebar-toggle">
-  <label for="check">
+  <label for="check" style:background={$isSidebarOpen ? "#333" : "transparent"}>
     <input type="checkbox" id="check" bind:checked={$isSidebarOpen} />
     <span />
     <span />
@@ -20,12 +20,12 @@
   label {
     display: flex;
     flex-direction: column;
-    width: 50px;
+    width: 40px;
     cursor: pointer;
   }
 
   label span {
-    background: #333;
+    background: #555;
     border-radius: 5px;
     height: 3px;
     margin: 5px 0;
@@ -47,10 +47,13 @@
   input[type="checkbox"] {
     display: none;
   }
+  input[type="checkbox"]:checked ~ span {
+    color: white;
+  }
 
   input[type="checkbox"]:checked ~ span:nth-of-type(1) {
     transform-origin: bottom;
-    transform: rotatez(45deg) translate(8px, 0px);
+    transform: rotatez(45deg) translate(6px, 2px);
   }
 
   input[type="checkbox"]:checked ~ span:nth-of-type(2) {
@@ -61,7 +64,7 @@
   input[type="checkbox"]:checked ~ span:nth-of-type(3) {
     transform-origin: bottom;
     width: 50%;
-    transform: translate(21px, -5px) rotatez(45deg);
+    transform: translate(17px, -6px) rotatez(45deg);
   }
 
   @media screen and (max-width: 800px) {

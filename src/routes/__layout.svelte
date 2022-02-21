@@ -4,6 +4,10 @@
   import SidebarToggle from "$lib/SidebarToggle.svelte";
   import Sidebar from "$lib/Sidebar.svelte";
   import { isSidebarOpen } from "$lib/stores";
+
+  const toggleSidebar = (event) => {
+    console.log(event.currentTarget);
+  };
 </script>
 
 <div class="wrapper overflow-hidden">
@@ -20,6 +24,8 @@
     </article>
   </main>
 </div>
+
+<svelte:window on:click={toggleSidebar} />
 
 <style>
   .wrapper {

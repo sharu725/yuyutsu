@@ -1,6 +1,6 @@
 {
-  "name": "citrakah",
-  "version": "0.0.1",
+  "name": "yuyutsu",
+  "version": "0.0.8",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",

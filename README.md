@@ -22,3 +22,4 @@ A minimal Sveltekit theme with a sidebar.
 - make changes and create a pull request
 
 ## License
+[MIT](https://github.com/sharu725/yuyutsu/blob/master/LICENSE.md)

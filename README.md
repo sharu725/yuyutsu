@@ -1,6 +1,6 @@
 # Yuyutsu
 A minimal Sveltekit theme with a sidebar. 
-
+![](/yuyutsu-screenshot.png)
 
 ## Usage (might change in the future)
 - fork the repo.

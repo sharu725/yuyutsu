@@ -8,10 +8,10 @@ const config = {
       pages: "docs",
       assets: "docs",
     }),
-
-    paths: {
-      base: dev ? "" : "/yuyutsu",
-    },
+    // Enable below line and change /yuyutsu to /<your-repo-name> to host the site on github pages
+    // paths: {
+    //   base: dev ? "" : "/yuyutsu",
+    // },
     appDir: "app",
   },
   preprocess: [preprocess({})],

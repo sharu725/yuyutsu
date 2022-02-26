@@ -1,6 +1,6 @@
 <script>
   import { isSidebarOpen } from "$lib/stores";
-
+  import Footer from "$lib/Footer.svelte";
 </script>
 
 <div class="sidebar" class:show={$isSidebarOpen}>
@@ -14,11 +14,16 @@
       <li><a href="/contact">Contact</a></li>
     </ul>
   </nav>
+  <div class="wrapper">
+    <Footer />
+  </div>
 </div>
 
 <style>
   .sidebar {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     left: -18rem;
     width: 18rem;
     height: 100vh;
@@ -31,7 +36,7 @@
     font-size: 2rem;
   }
   nav ul li a {
-    padding: 0.75rem 2rem;
+    padding: 1rem 2rem;
     border-bottom: 1px solid #333;
   }
 

@@ -6,7 +6,7 @@ A minimal Sveltekit theme with a sidebar.
 - fork the repo.
 - in github pages section, use ``/doc`` as the source.
 - change the ``paths`` in _svetle.config.js_ to match your repo name (yuyutsu by default).
-- clone the directory in your local machine, run ``npm run build`` and push changes.
+- clone the directory on your local machine, run ``npm run build`` and push changes.
 
 ## Todo 
 - [ ] use mdsvex for all pages/posts
@@ -16,8 +16,8 @@ A minimal Sveltekit theme with a sidebar.
 - [ ] a proper github pages build process
 
 
-
 ## Contributions
 - fork the repo
 - make changes and create a pull request
 
+## License

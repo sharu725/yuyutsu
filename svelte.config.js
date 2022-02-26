@@ -9,9 +9,10 @@ const config = {
       assets: "docs",
     }),
 
-    // paths: {
-    //   base: dev ? "" : "/yuyutsu",
-    // },
+    paths: {
+      base: dev ? "" : "/yuyutsu",
+    },
+    appDir: "app",
   },
   preprocess: [preprocess({})],
 };

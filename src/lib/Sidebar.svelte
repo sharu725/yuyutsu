@@ -1,6 +1,7 @@
 <script>
   import { isSidebarOpen } from "$lib/stores";
   import Footer from "$lib/Footer.svelte";
+  import { base } from "$app/paths";
 </script>
 
 <div class="sidebar" class:show={$isSidebarOpen}>
@@ -9,9 +10,9 @@
   </div>
   <nav>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><a href="{base}/">Home</a></li>
+      <li><a href="{base}/about">About</a></li>
+      <li><a href="{base}/contact">Contact</a></li>
     </ul>
   </nav>
   <div class="wrapper">

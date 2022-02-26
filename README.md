@@ -6,5 +6,6 @@ A minimal Sveltekit theme with a sidebar.
 - [ ] style markdown elements (links, images, table, iframe etc)
 - [ ] SEO
 - [ ] a darkmode switch
+- [ ] a proper github pages build process
 
 

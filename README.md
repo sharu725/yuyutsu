@@ -1,6 +1,7 @@
-# Yuyutsu
+# Yuyutsu Sveltekit Theme
 A minimal Sveltekit theme with a sidebar. 
-![](/yuyutsu-screenshot.png)
+
+![yuyutsu sveltekit theme](https://raw.githubusercontent.com/sharu725/yuyutsu/master/static/yuyutsu-screenshot.png)
 
 ## Usage (might change in the future)
 - fork the repo.

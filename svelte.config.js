@@ -1,19 +1,17 @@
 import preprocess from "svelte-preprocess";
 import adapter from "@sveltejs/adapter-static";
-const dev = process.env.NODE_ENV === 'development';
+const dev = process.env.NODE_ENV === "development";
 
 const config = {
   kit: {
     adapter: adapter({
-      pages: "build",
-      assets: "build",
-      fallback: null,
-      precompress: false,
+      pages: "docs",
+      assets: "docs",
     }),
 
-    paths: {
-      base: dev ? "" : "/yuyutsu",
-    },
+    // paths: {
+    //   base: dev ? "" : "/yuyutsu",
+    // },
   },
   preprocess: [preprocess({})],
 };

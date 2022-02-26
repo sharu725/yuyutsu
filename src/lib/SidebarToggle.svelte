@@ -3,7 +3,7 @@
 </script>
 
 <div class="sidebar-toggle">
-  <label for="check" style:background="#333">
+  <label for="check">
     <input type="checkbox" id="check" bind:checked={$isSidebarOpen} />
     <span />
     <span />

@@ -3,11 +3,9 @@
   import clickOutside from "$lib/utils/clickOutside";
 
   const handleClickOutside = () => {
-    console.log("before", $isSidebarOpen);
     if ($isSidebarOpen) {
       $isSidebarOpen = false;
     }
-    console.log("after", $isSidebarOpen);
   };
 </script>
 

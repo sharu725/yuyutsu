@@ -3,11 +3,12 @@
   import { isSidebarOpen } from "$lib/stores";
   import Footer from "$lib/Footer.svelte";
   import { base } from "$app/paths";
+  import { siteTitle } from "$lib/constants";
 </script>
 
 <div class="sidebar" class:show={$isSidebarOpen}>
   <div class="wrapper">
-    <h1>Yuyutsu</h1>
+    <h1>{siteTitle}</h1>
   </div>
   <nav>
     <ul>

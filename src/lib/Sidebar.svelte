@@ -1,4 +1,5 @@
 <script>
+  import { menu } from "$lib/constants";
   import { isSidebarOpen } from "$lib/stores";
   import Footer from "$lib/Footer.svelte";
   import { base } from "$app/paths";
@@ -10,9 +11,9 @@
   </div>
   <nav>
     <ul>
-      <li><a href="{base}/">Home</a></li>
-      <li><a href="{base}/about">About</a></li>
-      <li><a href="{base}/contact">Contact</a></li>
+      {#each menu as { title, url }}
+        <li><a href="{base}{url}">{title}</a></li>
+      {/each}
     </ul>
   </nav>
   <div class="wrapper">

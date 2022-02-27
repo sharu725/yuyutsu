@@ -5,6 +5,7 @@
   import Sidebar from "$lib/Sidebar.svelte";
   import { isSidebarOpen } from "$lib/stores";
   import { base } from "$app/paths";
+  import { siteTitle } from "$lib/constants";
 </script>
 
 <div class="wrapper overflow-hidden">
@@ -13,7 +14,7 @@
     <SidebarToggle />
     <div class="header-container">
       <header class="container">
-        <a href="{base}/"><h1>The site title</h1></a>
+        <a href="{base}/"><h1>{siteTitle}</h1></a>
       </header>
     </div>
     <article class="container">

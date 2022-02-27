@@ -1,12 +1,14 @@
 <script>
+  import { footerText } from "$lib/constants";
   const date = new Date();
   const year = date.getFullYear();
 </script>
 
-<p>© {year}. All rights reserved.</p>
+<p>© {year}. {footerText}</p>
 
 <style>
   p {
-    color: white;
+    color: #ddd;
+    font-size: 0.9rem;
   }
 </style>

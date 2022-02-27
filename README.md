@@ -10,7 +10,7 @@ A minimal Sveltekit theme with a sidebar.
 - clone the directory on your local machine, run ``npm run build`` and push changes.
 
 ## Todo 
-- [ ] use mdsvex for all pages/posts
+- [x] use mdsvex for all pages/posts
 - [ ] style markdown elements (links, images, table, iframe etc)
 - [ ] SEO
 - [ ] a darkmode switch

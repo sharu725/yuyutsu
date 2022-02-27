@@ -1,8 +1,21 @@
 <script>
   import { isSidebarOpen } from "$lib/stores";
+  import clickOutside from "$lib/utils/clickOutside";
+
+  const handleClickOutside = () => {
+    console.log("before", $isSidebarOpen);
+    if ($isSidebarOpen) {
+      $isSidebarOpen = false;
+    }
+    console.log("after", $isSidebarOpen);
+  };
 </script>
 
-<div class="sidebar-toggle">
+<div
+  class="sidebar-toggle"
+  use:clickOutside
+  on:click_outside={handleClickOutside}
+>
   <label for="check">
     <input type="checkbox" id="check" bind:checked={$isSidebarOpen} />
     <span />

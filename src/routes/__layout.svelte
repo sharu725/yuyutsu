@@ -4,10 +4,7 @@
   import SidebarToggle from "$lib/SidebarToggle.svelte";
   import Sidebar from "$lib/Sidebar.svelte";
   import { isSidebarOpen } from "$lib/stores";
-
-  const toggleSidebar = (event) => {
-    console.log(event.currentTarget);
-  };
+  import { base } from "$app/paths";
 </script>
 
 <div class="wrapper overflow-hidden">
@@ -16,7 +13,7 @@
     <SidebarToggle />
     <div class="header-container">
       <header class="container">
-        <h1>The site title</h1>
+        <a href="{base}/"><h1>The site title</h1></a>
       </header>
     </div>
     <article class="container">
@@ -24,8 +21,6 @@
     </article>
   </main>
 </div>
-
-<svelte:window on:click={toggleSidebar} />
 
 <style>
   .wrapper {

@@ -38,6 +38,10 @@
     font-size: 2.25rem;
     margin: 1rem 0;
   }
+
+  header a {
+    text-decoration: none;
+  }
   article {
     margin: 2rem auto;
   }

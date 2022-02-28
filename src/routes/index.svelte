@@ -18,6 +18,26 @@
 </script>
 
 {#each posts as post}
-  <a href="/posts/{post.slug}"><h2>{post.title}</h2></a>
+  <a class="title" href="/posts/{post.slug}"><h2>{post.title}</h2></a>
   <p>{post.description}</p>
+  <p class="read-more"><a href="/posts/{post.slug}">Read More</a></p>
 {/each}
+
+<style>
+  .title {
+    text-decoration: none;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    text-align: justify;
+  }
+  .read-more {
+    display: flex;
+  }
+  .read-more a {
+    margin-left: auto;
+    font-size: 1rem;
+  }
+</style>

@@ -1,3 +1,9 @@
+:root {
+  --brand-color: #333;
+  --text-color: #555;
+  --headers-color: #333;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -23,7 +29,6 @@ h5,
 h6 {
   margin-top: 1rem;
   color: #333;
-
 }
 
 h1 {
@@ -45,6 +50,15 @@ h6 {
   font-size: 1rem;
 }
 
+a {
+  text-decoration: underline;
+  color: var(--brand-color);
+}
+
+a:hover {
+  color: var(--text-color);
+}
+
 main,
 .sidebar {
   transition-duration: 500ms;
@@ -57,3 +71,4 @@ main,
   margin-left: auto;
   margin-right: auto;
 }
+

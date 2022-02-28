@@ -1,1 +1,6 @@
-<h1>Contact</h1>
+---
+layout: page
+title: Contact
+---
+
+A contact form maybe.

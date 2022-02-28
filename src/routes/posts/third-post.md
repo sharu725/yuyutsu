@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: "Third post"
 description: "Welcome to Earth. It’s hot in the summer and cold in the winter. It’s round and wet and crowded. On the outside, babies, you’ve got a hundred years here."
 tags:

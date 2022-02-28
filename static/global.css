@@ -2,6 +2,7 @@
   --brand-color: #333;
   --text-color: #555;
   --headers-color: #333;
+  --text-light: #777;
 }
 
 body {
@@ -71,4 +72,3 @@ main,
   margin-left: auto;
   margin-right: auto;
 }
-

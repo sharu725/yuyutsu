@@ -1,1 +1,6 @@
-<h1>About</h1>
+---
+layout: page
+title: About
+---
+
+Something about Yuyutsu.

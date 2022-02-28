@@ -9,6 +9,10 @@ A minimal Sveltekit theme with a sidebar.
 - change the ``paths`` in _svelte.config.js_ to match your repo name (yuyutsu by default).
 - clone the directory on your local machine, run ``npm run build`` and push changes.
 
+## Features
+- minimal layout, a nice sidebar.
+- markdown blog posts and pages with layout support.
+
 ## Todo 
 - [x] use mdsvex for all pages/posts
 - [ ] style markdown elements (links, images, table, iframe etc)

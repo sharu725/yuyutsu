@@ -6,7 +6,7 @@ A minimal Sveltekit theme with a sidebar.
 ## Usage (might change in the future)
 - fork the repo.
 - in github pages section, use ``/doc`` as the source.
-- change the ``paths`` in _svetle.config.js_ to match your repo name (yuyutsu by default).
+- change the ``paths`` in _svelte.config.js_ to match your repo name (yuyutsu by default).
 - clone the directory on your local machine, run ``npm run build`` and push changes.
 
 ## Todo 

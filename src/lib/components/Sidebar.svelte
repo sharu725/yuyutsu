@@ -1,7 +1,7 @@
 <script>
   import { menu } from "$lib/constants";
   import { isSidebarOpen } from "$lib/stores";
-  import Footer from "$lib/Footer.svelte";
+  import Footer from "$lib/components/Footer.svelte";
   import { base } from "$app/paths";
   import { siteTitle } from "$lib/constants";
 </script>
@@ -12,8 +12,8 @@
   </div>
   <nav>
     <ul>
-      {#each menu as { title, url }}
-        <li><a href="{base}{url}">{title}</a></li>
+      {#each menu as { title, url, target }}
+        <li><a href="{base}{url}" {target}>{title}</a></li>
       {/each}
     </ul>
   </nav>

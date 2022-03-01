@@ -1,8 +1,8 @@
 <script>
   import "../../static/reset.css";
   import "../../static/global.css";
-  import SidebarToggle from "$lib/SidebarToggle.svelte";
-  import Sidebar from "$lib/Sidebar.svelte";
+  import SidebarToggle from "$lib/components/SidebarToggle.svelte";
+  import Sidebar from "$lib/components/Sidebar.svelte";
   import { isSidebarOpen } from "$lib/stores";
   import { base } from "$app/paths";
   import { siteTitle } from "$lib/constants";

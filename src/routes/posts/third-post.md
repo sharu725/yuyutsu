@@ -9,6 +9,7 @@ tags:
     { name: "Markdown", link: "https://www.markdownguide.org/" },
   ]
 date: "1st May 2021"
+edit: https://github.com/sharu725/yuyutsu/edit/master/src/routes/posts/third-post.md
 ---
 
 Truly it was a great journey, and in it I met with many, whom to know was to love; but whom never could I see again; for life has not space enough; and each must do his duty to the security and well-being of the Redoubt. Yet, for all that I have set down, we travelled much, always; but there were so many millions, and so few years.
@@ -16,10 +17,15 @@ Truly it was a great journey, and in it I met with many, whom to know was to lov
 Atticus said to Jem one day, “I’d rather you shot at tin cans in the backyard, but I know you’ll go after birds. Shoot all the blue jays you want, if you can hit ‘em, but remember it’s a sin to kill a mockingbird.” That was the only time I ever heard Atticus say it was a sin to do something, and I asked Miss Maudie about it. “Your father’s right,” she said. “Mockingbirds don’t do one thing except make music for us to enjoy. They don’t eat up people’s gardens, don’t nest in corn cribs, they don’t do one thing but sing their hearts out for us. That’s why it’s a sin to kill a mockingbird.
 
 # A header
+
 ## A header
+
 ### A header
+
 #### A header
+
 ##### A header
+
 ###### A header
 
 I took a deep breath and listened to the old brag of my heart. I am, I am, I am.

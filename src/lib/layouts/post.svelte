@@ -1,14 +1,21 @@
 <script>
-  export let title, date;
+  export let title, date, edit;
 </script>
 
 <h1>{title}</h1>
 <p class="date">{date}</p>
 <slot />
+<p class="edit"><a href={edit} target="_blank">Edit this page</a></p>
 
 <style>
   .date {
     font-size: 1rem;
     color: var(--text-light);
+  }
+  .edit {
+    display: flex;
+  }
+  .edit a {
+    margin-left: auto;
   }
 </style>

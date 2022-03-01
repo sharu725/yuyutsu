@@ -11,8 +11,14 @@ export const menu = [
     title: "Contact",
     url: "/contact",
   },
+  {
+    title: "Github",
+    url: "https://github.com/sharu725/yuyutsu",
+    target: "_blank",
+  },
 ];
 
-export const siteTitle = "Yuyutsu"
+export const siteTitle = "Yuyutsu";
 
-export const footerText = /* <Current Year> is already prefixed */ "All rights reserved"
+export const footerText =
+  /* <Current Year> is already prefixed */ "All rights reserved";

@@ -18,9 +18,9 @@
 </script>
 
 {#each posts as post}
-  <a class="title" href="/posts/{post.slug}"><h2>{post.title}</h2></a>
+  <a sveltekit:prefetch class="title" href="/posts/{post.slug}"><h2>{post.title}</h2></a>
   <p>{post.description}</p>
-  <p class="read-more"><a href="/posts/{post.slug}">Read More</a></p>
+  <p class="read-more"><a sveltekit:prefetch href="/posts/{post.slug}">Read More</a></p>
 {/each}
 
 <style>

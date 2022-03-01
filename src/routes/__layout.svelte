@@ -14,7 +14,7 @@
     <SidebarToggle />
     <div class="header-container">
       <header class="container">
-        <a href="{base}/"><h1>{siteTitle}</h1></a>
+        <a sveltekit:prefetch href="{base}/"><h1>{siteTitle}</h1></a>
       </header>
     </div>
     <article class="container">

@@ -1,5 +1,5 @@
 # Yuyutsu Sveltekit Theme
-A minimal Sveltekit theme with a sidebar. 
+A minimal Sveltekit markdown theme with a sidebar. 
 
 ![yuyutsu sveltekit theme](https://raw.githubusercontent.com/sharu725/yuyutsu/master/static/yuyutsu-screenshot.png)
 

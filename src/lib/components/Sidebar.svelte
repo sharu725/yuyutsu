@@ -13,7 +13,7 @@
   <nav>
     <ul>
       {#each menu as { title, url, target }}
-        <li><a href="{base}{url}" {target}>{title}</a></li>
+        <li><a sveltekit:prefetch href="{base}{url}" {target}>{title}</a></li>
       {/each}
     </ul>
   </nav>

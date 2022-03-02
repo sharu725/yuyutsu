@@ -1,3 +1,5 @@
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/sharu725/yuyutsu)
+
 # Yuyutsu Sveltekit Theme
 A minimal Sveltekit markdown theme with a sidebar. 
 

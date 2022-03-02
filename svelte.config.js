@@ -9,8 +9,8 @@ const config = {
 
   kit: {
     adapter: adapter({
-      pages: "docs",
-      assets: "docs",
+      pages: "public",
+      assets: "public",
     }),
     // Enable below line and change /yuyutsu to /<your-repo-name> to host the site on github pages
     // paths: {

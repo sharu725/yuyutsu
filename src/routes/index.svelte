@@ -14,13 +14,26 @@
 </script>
 
 <script>
+  import Seo from "$lib/components/Seo.svelte";
+  import { siteTitle, siteDescription } from "$lib/constants";
   export let posts;
+
+  const seo = {
+    title: siteTitle,
+    description: siteDescription,
+  };
 </script>
 
+<Seo {...seo} />
+
 {#each posts as post}
-  <a sveltekit:prefetch class="title" href="/posts/{post.slug}"><h2>{post.title}</h2></a>
+  <a sveltekit:prefetch class="title" href="/posts/{post.slug}"
+    ><h2>{post.title}</h2></a
+  >
   <p>{post.description}</p>
-  <p class="read-more"><a sveltekit:prefetch href="/posts/{post.slug}">Read More</a></p>
+  <p class="read-more">
+    <a sveltekit:prefetch href="/posts/{post.slug}">Read More</a>
+  </p>
 {/each}
 
 <style>

@@ -19,6 +19,7 @@ export const menu = [
 ];
 
 export const siteTitle = "Yuyutsu";
+export const siteDescription = "A minimal Sveltekit theme with a sidebar.";
 
 export const footerText =
   /* <Current Year> is already prefixed */ "All rights reserved";

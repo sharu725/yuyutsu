@@ -1,10 +1,16 @@
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/sharu725/yuyutsu)
+
 # Yuyutsu Sveltekit Theme
 A minimal Sveltekit markdown theme with a sidebar. 
 
-![yuyutsu sveltekit theme](https://raw.githubusercontent.com/sharu725/yuyutsu/master/static/yuyutsu-screenshot.png)
+![Yuyutsu Sveltekit Theme screenshot](https://user-images.githubusercontent.com/8033084/156288013-10575606-1607-4ee0-92a0-1638c2f0677a.png)
 
 ## Usage (might change in the future)
 - fork the repo.
+- run ``npm install`` to install all the dependencies.
+- run ``npm run dev`` to start a dev server.
+- run ``npm run build`` to build the production site.
+- host it anywhere you like. If you choose github pages, use the following method.
 - in github pages section, use ``/doc`` as the source.
 - change the ``paths`` in _svelte.config.js_ to match your repo name (yuyutsu by default).
 - clone the directory on your local machine, run ``npm run build`` and push changes.
@@ -18,7 +24,7 @@ A minimal Sveltekit markdown theme with a sidebar.
 - [ ] style markdown elements (links, images, table, iframe etc)
 - [ ] SEO
 - [ ] a darkmode switch
-- [ ] a proper github pages build process
+- [ ] ~~a proper github pages build process~~ Hosted on Vercel
 
 
 ## Contributions

@@ -1,22 +1,15 @@
 <script>
-  import { menu } from "$lib/constants";
   import { isSidebarOpen } from "$lib/stores";
   import Footer from "$lib/components/Footer.svelte";
-  import { base } from "$app/paths";
   import { siteTitle } from "$lib/constants";
+  import Nav from "$lib/components/Nav.svelte";
 </script>
 
 <div class="sidebar" class:show={$isSidebarOpen}>
   <div class="wrapper">
     <h1>{siteTitle}</h1>
   </div>
-  <nav>
-    <ul>
-      {#each menu as { title, url, target }}
-        <li><a sveltekit:prefetch href="{base}{url}" {target}>{title}</a></li>
-      {/each}
-    </ul>
-  </nav>
+  <Nav />
   <div class="wrapper">
     <Footer />
   </div>
@@ -38,26 +31,7 @@
     font-weight: bold;
     font-size: 2rem;
   }
-  nav ul li a {
-    padding: 1rem 2rem;
-    border-bottom: 1px solid #333;
-  }
 
-  nav ul li:first-child a {
-    border-top: 1px solid #333;
-  }
-
-  nav ul li a:hover {
-    background-color: #333;
-  }
-  a {
-    display: block;
-    color: white;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: none;
-  }
   .show {
     transform: translateX(18rem);
     box-shadow: 0 10px 5px #222;

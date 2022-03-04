@@ -24,7 +24,7 @@ A minimal Sveltekit markdown theme with a sidebar.
 - [ ] paginate posts
 - [ ] style markdown elements (links, images, table, iframe etc)
 - [x] SEO
-- [ ] a darkmode switch
+- [x] a darkmode switch
 - [ ] ~~a proper github pages build process~~ Hosted on Vercel
 
 

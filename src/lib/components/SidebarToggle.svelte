@@ -36,7 +36,7 @@
   }
 
   label span {
-    background: #555;
+    background: var(--headers-color);
     border-radius: 5px;
     height: 3px;
     margin: 5px 0;

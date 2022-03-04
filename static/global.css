@@ -1,8 +1,19 @@
 :root {
+  --bg-color: #fff;
   --brand-color: #333;
   --text-color: #555;
   --headers-color: #333;
-  --text-light: #777;
+  --text-light: #bbb;
+  --sidebar-bg: #222;
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #112042;
+  --brand-color: #3f83ba;
+  --text-color: #787878;
+  --headers-color: #a7a7a7;
+  --text-light: #26407c;
+  --sidebar-bg: #111;
 }
 
 body {
@@ -14,10 +25,11 @@ body {
   font-size: 20px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  background-color: var(--bg-color);
 }
 
 p {
-  color: #555;
+  color: var(--text-color);
   font-size: 20px;
   margin-bottom: 1.2rem;
 }
@@ -29,7 +41,7 @@ h4,
 h5,
 h6 {
   margin-top: 1rem;
-  color: #333;
+  color: var(--headers-color);
 }
 
 h1 {

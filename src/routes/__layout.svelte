@@ -6,6 +6,7 @@
   import { isSidebarOpen } from "$lib/stores";
   import { base } from "$app/paths";
   import { siteTitle } from "$lib/constants";
+  import SvelteTheme from "svelte-themes/SvelteTheme.svelte";
 </script>
 
 <div class="wrapper overflow-hidden">
@@ -23,6 +24,8 @@
   </main>
 </div>
 
+<SvelteTheme />
+
 <style>
   .wrapper {
     display: flex;
@@ -32,7 +35,7 @@
     width: 100%;
   }
   .header-container {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--text-light);
   }
   header h1 {
     font-size: 2.25rem;

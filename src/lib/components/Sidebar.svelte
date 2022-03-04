@@ -23,18 +23,18 @@
     left: -18rem;
     width: 18rem;
     height: 100vh;
-    background-color: #222;
+    background-color: var(--sidebar-bg);
     font-size: 1rem;
   }
   h1 {
-    color: white;
+    color: #ddd;
     font-weight: bold;
     font-size: 2rem;
   }
 
   .show {
     transform: translateX(18rem);
-    box-shadow: 0 10px 5px #222;
+    box-shadow: 0 10px 5px var(--sidebar-bg);
   }
 
   .wrapper {

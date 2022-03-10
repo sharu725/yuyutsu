@@ -2,7 +2,7 @@ import { mdsvex } from "mdsvex";
 import mdsvexConfig from "./mdsvex.config.js";
 import preprocess from "svelte-preprocess";
 import adapter from "@sveltejs/adapter-static";
-const dev = process.env.NODE_ENV === "development";
+// const dev = process.env.NODE_ENV === "development";
 
 const config = {
   extensions: [".svelte", ...mdsvexConfig.extensions],

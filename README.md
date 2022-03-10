@@ -22,7 +22,7 @@ A minimal Sveltekit markdown theme with a sidebar.
 ## Todo 
 - [x] use mdsvex for all pages/posts
 - [ ] paginate posts
-- [ ] style markdown elements (links, images, table, iframe etc)
+- [ ] style html elements (links, buttons, images, table, iframe etc)
 - [x] SEO
 - [x] a darkmode switch
 - [ ] ~~a proper github pages build process~~ Hosted on Vercel

@@ -17,6 +17,7 @@
     font-size: 2rem;
     margin: 0.5rem 0;
     font-weight: 600;
+    text-align: center;
   }
 
   header a {

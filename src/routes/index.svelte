@@ -16,17 +16,24 @@
 <script>
   import Seo from "$lib/components/Seo.svelte";
   import { siteTitle, siteDescription } from "$lib/constants";
+  import { paginate, PaginationNav } from "svelte-paginate";
+  import "../../static/pagination.css"
   export let posts;
 
   const seo = {
     title: siteTitle,
     description: siteDescription,
   };
+
+  let items = posts.reverse();
+  let currentPage = 1;
+  let pageSize = 2;
+  $: paginatedItems = paginate({ items, pageSize, currentPage });
 </script>
 
 <Seo {...seo} />
 
-{#each posts as post}
+{#each paginatedItems as post}
   <a sveltekit:prefetch class="title" href="/posts/{post.slug}"
     ><h2>{post.title}</h2></a
   >
@@ -35,6 +42,15 @@
     <a sveltekit:prefetch href="/posts/{post.slug}">Read More</a>
   </p>
 {/each}
+
+<PaginationNav
+  totalItems={items.length}
+  {pageSize}
+  {currentPage}
+  limit={1}
+  showStepOptions={true}
+  on:setPage={(e) => (currentPage = e.detail.page)}
+/>
 
 <style>
   .title {

@@ -21,7 +21,7 @@ A minimal Sveltekit markdown theme with a sidebar.
 
 ## Todo 
 - [x] use mdsvex for all pages/posts
-- [ ] paginate posts
+- [x] paginate posts
 - [ ] style html elements (links, buttons, images, table, iframe etc)
 - [x] SEO
 - [x] a darkmode switch

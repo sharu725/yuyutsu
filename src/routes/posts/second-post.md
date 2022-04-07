@@ -2,12 +2,9 @@
 layout: post
 title: "Second post"
 description: "Truly it was a great journey, and in it I met with many, whom to know was to love; but whom never could I see again; for life has not space enough; and each must do his duty to the security and well-being of the Redoubt."
-tags:
-  [
-    { name: "Svelte Kit", link: "https://kit.svelte.dev/" },
-    { name: "Tailwind", link: "https://www.tailwindcss.com" },
-    { name: "Markdown", link: "https://www.markdownguide.org/" },
-  ]
+categories:
+  - journey
+  - space
 date: "3rd April 2021"
 published: true
 edit: https://github.com/sharu725/yuyutsu/edit/master/src/routes/posts/firstpost.md

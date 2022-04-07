@@ -23,4 +23,10 @@
   header a {
     text-decoration: none;
   }
+
+  @media screen and (max-width: 800px) {
+    header h1 {
+      text-align: center;
+    }
+  }
 </style>

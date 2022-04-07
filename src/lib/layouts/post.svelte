@@ -1,6 +1,7 @@
 <script>
   import Seo from "$lib/components/Seo.svelte";
-  export let title, description, date, edit;
+  import Categories from "$lib/components/Categories.svelte";
+  export let title, description, date, categories, edit;
   const seo = {
     title,
     description,
@@ -10,6 +11,7 @@
 <Seo {...seo} />
 
 <h1>{title}</h1>
+<Categories {categories} />
 <p class="date">{date}</p>
 <slot />
 <p class="edit"><a href={edit} target="_blank">Edit this page</a></p>
@@ -24,5 +26,11 @@
   }
   .edit a {
     margin-left: auto;
+  }
+
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 2rem;
+    }
   }
 </style>

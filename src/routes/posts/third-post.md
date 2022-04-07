@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Third post"
+title: "The most beautiful things in the world cannot be seen"
 description: "Welcome to Earth. It’s hot in the summer and cold in the winter. It’s round and wet and crowded. On the outside, babies, you’ve got a hundred years here."
 categories:
   - nature

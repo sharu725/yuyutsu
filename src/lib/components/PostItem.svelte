@@ -4,28 +4,23 @@
   const { title, description, slug, categories } = post;
 </script>
 
-<a sveltekit:prefetch class="title" href="/posts/{slug}"><h2>{title}</h2></a>
-<Categories {categories} />
-<p>{description}</p>
-<p class="read-more">
-  <a sveltekit:prefetch href="/posts/{slug}">Read More</a>
-</p>
+<div>
+  <a sveltekit:prefetch class="title" href="/posts/{slug}"><h2>{title}</h2></a>
+  <Categories {categories} />
+  <p>{description}</p>
+</div>
 
 <style>
   .title {
     text-decoration: none;
   }
+  .title:hover {
+    text-decoration: underline;
+  }
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   p {
     text-align: justify;
-  }
-  .read-more {
-    display: flex;
-  }
-  .read-more a {
-    margin-left: auto;
-    font-size: 1rem;
   }
 </style>

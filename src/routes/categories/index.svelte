@@ -13,7 +13,7 @@
     }, {});
 
     const groupedPosts = Object.entries(groupByCategory);
-    
+
     return {
       props: {
         groupedPosts,
@@ -30,13 +30,20 @@
 <h1>Categories</h1>
 
 {#each groupedPosts as [category, posts]}
-  <h2>{category}</h2>
-  {#each posts as post}
-    <PostItem {post} />
-  {/each}
+  <h2>{category}:</h2>
+  <div class="grid">
+    {#each posts as post}
+      <PostItem {post} />
+    {/each}
+  </div>
 {/each}
 
 <style>
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
   h2 {
     text-transform: capitalize;
   }

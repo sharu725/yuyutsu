@@ -11,15 +11,17 @@
 <Seo {...seo} />
 
 <h1>{title}</h1>
-<Categories {categories} />
 <p class="date">{date}</p>
+<Categories {categories} />
 <slot />
 <p class="edit"><a href={edit} target="_blank">Edit this page</a></p>
 
 <style>
   .date {
     font-size: 1rem;
-    color: var(--text-light);
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
   }
   .edit {
     display: flex;

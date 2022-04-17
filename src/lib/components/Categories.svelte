@@ -19,13 +19,14 @@
     margin-right: 1rem;
     padding: 0.05rem 0.5rem;
     border-radius: 0.2rem;
-    color: white;
-    background: rgb(114, 114, 114);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 300;
+    box-shadow: inset 0 0 5px var(--text-light);
+    transition-duration: 300ms;
   }
   .categories a:hover {
+    color: white;
     background-color: rgb(139, 139, 139);
   }
 </style>

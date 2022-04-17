@@ -19,6 +19,10 @@ A minimal Sveltekit markdown theme with a sidebar.
 - minimal layout, a nice sidebar.
 - markdown blog posts and pages with layout support.
 
+## Speed
+![yuyutsu-lighthouse-score](https://user-images.githubusercontent.com/8033084/163713979-3dfd23dd-c861-4387-816c-a08f0f70819e.jpg)
+
+
 ## Todo 
 - [x] use mdsvex for all pages/posts
 - [x] paginate posts

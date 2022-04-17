@@ -18,13 +18,13 @@ const config = {
     // },
     appDir: "app",
 
-    vite: {
-      server: {
-        fs: {
-          allow: ["static"],
-        },
-      },
-    },
+    // vite: {
+    //   server: {
+    //     fs: {
+    //       allow: ["static"],
+    //     },
+    //   },
+    // },
   },
 
   preprocess: [preprocess({}), mdsvex(mdsvexConfig)],

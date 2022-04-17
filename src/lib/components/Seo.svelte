@@ -7,7 +7,7 @@
   export let canonical = undefined;
   export let openGraph = undefined;
   export let twitter = undefined;
-  export let jsonLd = undefined;
+  // export let jsonLd = undefined;
 </script>
 
 <svelte:head>

@@ -12,8 +12,8 @@
     {#each menu as { title, url, target }}
       <li>
         <a
-          class:active={url == pathname}
-          sveltekit:prefetch
+          sveltekit:prefetch={url.match("http") ? null : true}
+          class:active={url !== "/" ? pathname.match(url) : url === pathname}
           href="{base}{url}"
           {target}>{title}</a
         >

@@ -17,6 +17,14 @@ const config = {
     //   base: dev ? "" : "/yuyutsu",
     // },
     appDir: "app",
+
+    vite: {
+      server: {
+        fs: {
+          allow: ["static"],
+        },
+      },
+    },
   },
 
   preprocess: [preprocess({}), mdsvex(mdsvexConfig)],

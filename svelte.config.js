@@ -1,30 +1,20 @@
 import { mdsvex } from "mdsvex";
 import mdsvexConfig from "./mdsvex.config.js";
 import preprocess from "svelte-preprocess";
-import adapter from "@sveltejs/adapter-static";
+import adapter from '@sveltejs/adapter-node';
 // const dev = process.env.NODE_ENV === "development";
 
 const config = {
   extensions: [".svelte", ...mdsvexConfig.extensions],
 
   kit: {
-    adapter: adapter({
-      pages: "public",
-      assets: "public",
-    }),
+    adapter: adapter(),
     // Enable below line and change /yuyutsu to /<your-repo-name> to host the site on github pages
     // paths: {
     //   base: dev ? "" : "/yuyutsu",
     // },
-    appDir: "app",
+    // appDir: "app",
 
-    // vite: {
-    //   server: {
-    //     fs: {
-    //       allow: ["static"],
-    //     },
-    //   },
-    // },
   },
 
   preprocess: [preprocess({}), mdsvex(mdsvexConfig)],

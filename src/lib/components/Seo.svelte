@@ -7,7 +7,6 @@
   export let canonical = undefined;
   export let openGraph = undefined;
   export let twitter = undefined;
-  // export let jsonLd = undefined;
 </script>
 
 <svelte:head>
@@ -139,12 +138,6 @@
       <meta name="twitter:player:height" content={twitter.playerHeight} />
     {/if}
   {/if}
-
-  <!-- {#if jsonLd}
-    {@html `<script type="application/ld+json">${
-      JSON.stringify({ "@context": "https://schema.org", ...jsonLd }) + "<"
-    }/script>`}
-  {/if} -->
 
   <slot />
 </svelte:head>

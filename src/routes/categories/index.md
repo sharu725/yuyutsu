@@ -1,3 +1,9 @@
+---
+layout: page
+title: Categories
+description: All categories in one place
+---
+
 <script context="module">
   export const load = async ({ stuff }) => {
     const { posts } = stuff;
@@ -22,6 +28,7 @@
   };
 </script>
 
+
 <script>
   import PostItem from "$lib/components/PostItem.svelte";
   export let groupedPosts;
@@ -30,6 +37,7 @@
 <h1>Categories</h1>
 
 {#each groupedPosts as [category, posts]}
+
   <div class="category-container">
     <h2>{category}:</h2>
     <div class="grid">

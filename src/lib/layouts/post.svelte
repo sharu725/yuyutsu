@@ -1,9 +1,12 @@
 <script>
   import Seo from "$lib/components/Seo.svelte";
   import Categories from "$lib/components/Categories.svelte";
+  import { siteTitle } from "$lib/constants";
+
   export let title, description, date, categories, edit;
+
   const seo = {
-    title,
+    title: `${title} | ${siteTitle}`,
     description,
   };
 </script>

@@ -30,15 +30,22 @@
 <h1>Categories</h1>
 
 {#each groupedPosts as [category, posts]}
-  <h2>{category}:</h2>
-  <div class="grid">
-    {#each posts as post}
-      <PostItem {post} />
-    {/each}
+  <div class="category-container">
+    <h2>{category}:</h2>
+    <div class="grid">
+      {#each posts as post}
+        <PostItem {post} />
+      {/each}
+    </div>
   </div>
 {/each}
 
 <style>
+  .category-container {
+    border: 1px solid var(--bg-light);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,5 +53,11 @@
   }
   h2 {
     text-transform: capitalize;
+  }
+
+  @media screen and (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

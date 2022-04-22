@@ -16,6 +16,7 @@
 <script>
   import "../../static/reset.css";
   import "../../static/global.css";
+  import "../../static/syntax-highlight.css";
   import SidebarToggle from "$lib/components/SidebarToggle.svelte";
   import Sidebar from "$lib/components/Sidebar.svelte";
   import { isSidebarOpen } from "$lib/stores";

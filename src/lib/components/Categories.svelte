@@ -5,7 +5,7 @@
 <ul class="categories">
   {#each categories as category}
     <li>
-      <a href={`/categories/${category}`}>{category}</a>
+      <a sveltekit:prefetch href={`/categories/${category}`}>{category}</a>
     </li>
   {/each}
 </ul>
@@ -27,6 +27,6 @@
   }
   .categories a:hover {
     color: white;
-    background-color: rgb(139, 139, 139);
+    background-color: rgb(97, 97, 97);
   }
 </style>

@@ -28,13 +28,10 @@ description: All categories in one place
   };
 </script>
 
-
 <script>
   import PostItem from "$lib/components/PostItem.svelte";
   export let groupedPosts;
 </script>
-
-<h1>Categories</h1>
 
 {#each groupedPosts as [category, posts]}
 

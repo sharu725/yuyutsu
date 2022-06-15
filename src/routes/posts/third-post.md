@@ -7,6 +7,7 @@ categories:
   - bird
 date: "1st May 2021"
 edit: https://github.com/sharu725/yuyutsu/edit/master/src/routes/posts/third-post.md
+image: https://picsum.photos/id/656/600/250
 ---
 
 Truly it was a great journey, and in it I met with many, whom to know was to love; but whom never could I see again; for life has not space enough; and each must do his duty to the security and well-being of the Redoubt. Yet, for all that I have set down, we travelled much, always; but there were so many millions, and so few years.

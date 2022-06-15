@@ -7,6 +7,7 @@
   export let canonical = undefined;
   export let openGraph = undefined;
   export let twitter = undefined;
+  export let image = undefined;
 </script>
 
 <svelte:head>
@@ -29,6 +30,11 @@
 
   {#if description}
     <meta name="description" content={description} />
+  {/if}
+
+  {#if image}
+    <meta property="og:image" content={image} />
+    <meta property="og:image:alt" content={title} />
   {/if}
 
   {#if canonical}
@@ -93,21 +99,6 @@
           <meta property="article:tag" content={tag} />
         {/each}
       {/if}
-    {/if}
-
-    {#if openGraph.images && openGraph.images.length}
-      {#each openGraph.images as image}
-        <meta property="og:image" content={image.url} />
-        {#if image.alt}
-          <meta property="og:image:alt" content={image.alt} />
-        {/if}
-        {#if image.width}
-          <meta property="og:image:width" content={image.width.toString()} />
-        {/if}
-        {#if image.height}
-          <meta property="og:image:height" content={image.height.toString()} />
-        {/if}
-      {/each}
     {/if}
   {/if}
 

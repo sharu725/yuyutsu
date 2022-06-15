@@ -7,6 +7,7 @@ categories:
   - html
 date: "10th April 2021"
 edit: https://github.com/sharu725/yuyutsu/edit/master/src/routes/posts/secondpost.md
+image: https://picsum.photos/id/1083/600/250
 ---
 
 Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. _Aenean eu leo quam._ Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.

@@ -3,11 +3,12 @@
   import Categories from "$lib/components/Categories.svelte";
   import { siteTitle } from "$lib/constants";
 
-  export let title, description, date, categories, edit;
+  export let title, description, date, categories, edit, image;
 
   const seo = {
     title: `${title} | ${siteTitle}`,
     description,
+    image,
   };
 </script>
 
@@ -16,6 +17,7 @@
 <h1>{title}</h1>
 <p class="date">{date}</p>
 <Categories {categories} />
+<img src={image} alt={title} />
 <slot />
 <p class="edit"><a href={edit} target="_blank">Edit this page</a></p>
 

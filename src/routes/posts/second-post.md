@@ -8,6 +8,7 @@ categories:
 date: "3rd April 2021"
 published: true
 edit: https://github.com/sharu725/yuyutsu/edit/master/src/routes/posts/firstpost.md
+image: https://picsum.photos/id/342/600/250
 ---
 
 <script>

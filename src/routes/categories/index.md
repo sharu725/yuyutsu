@@ -60,7 +60,7 @@ description: All categories in one place
     text-transform: capitalize;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     .grid {
       grid-template-columns: 1fr;
     }

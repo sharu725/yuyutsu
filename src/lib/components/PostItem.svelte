@@ -6,7 +6,7 @@
 
 <div class="post-item">
   <a sveltekit:prefetch class="title" href="/posts/{slug}"><h2>{title}</h2></a>
-  <img src={image} alt={title} />
+  <img width="800" height="300" src={image} alt={title} />
   <Categories {categories} />
   <p>{description}</p>
 </div>
@@ -26,5 +26,16 @@
   }
   p {
     text-align: justify;
+  }
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+  @media screen and (max-width: 768px) {
+    img {
+      height: 200px;
+      object-fit: contain;
+      object-position: center;
+    }
   }
 </style>

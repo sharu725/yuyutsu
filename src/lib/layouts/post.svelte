@@ -17,7 +17,7 @@
 <h1>{title}</h1>
 <p class="date">{date}</p>
 <Categories {categories} />
-<img src={image} alt={title} />
+<img width="800" height="300" src={image} alt={title} />
 <slot />
 <p class="edit"><a href={edit} target="_blank">Edit this page</a></p>
 
@@ -34,10 +34,19 @@
   .edit a {
     margin-left: auto;
   }
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     h1 {
       font-size: 2rem;
+    }
+    img {
+      height: 200px;
+      object-fit: contain;
+      object-position: center;
     }
   }
 </style>

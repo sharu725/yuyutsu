@@ -36,7 +36,7 @@
   h1 {
     text-transform: capitalize;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     h1 {
       font-size: 2rem;
     }

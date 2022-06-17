@@ -12,6 +12,7 @@
     {#each menu as { title, url, target }}
       <li>
         <a
+          rel={url.match("http") ? "noopener noreferrer" : ""}
           sveltekit:prefetch={url.match("http") ? null : true}
           class:active={url !== "/" ? pathname.match(url) : url === pathname}
           href="{base}{url}"

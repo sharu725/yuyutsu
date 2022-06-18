@@ -18,6 +18,7 @@ A minimal Sveltekit markdown theme with a sidebar.
 
 - minimal layout with a nice sidebar.
 - markdown blog posts and pages with layout support.
+- categorize blog posts
 - basic search engine optimization
 
 ## Speed

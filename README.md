@@ -31,7 +31,7 @@ A minimal Sveltekit markdown theme with a sidebar.
 - [ ] style html elements (links, buttons, images, table, iframe etc)
 - [x] SEO
 - [x] a darkmode switch
-- [ ] ready to host on Vercel
+- [x] ready to host on Vercel
 
 ## Contributions
 

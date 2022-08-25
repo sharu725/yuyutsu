@@ -2,10 +2,10 @@
   "name": "yuyutsu",
   "version": "0.1.0",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview"
+    "dev": "vite dev",
+    "build": "vite build",
+    "package": "vite package",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@sveltejs/adapter-vercel": "next",

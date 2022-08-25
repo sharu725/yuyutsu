@@ -1,7 +1,5 @@
-import getPath from "$lib/utils/getPath";
-
-export const get = async ({ url }) => {
-  const modules = import.meta.glob("../../posts/*.{md,svx,svelte.md}");
+export const GET = async ({ url }) => {
+  const modules = import.meta.glob("../../posts/*/*.{md,svx,svelte.md}");
   const postPromises = [];
   const limit = Number(url.searchParams.get("limit") ?? Infinity);
 
@@ -12,7 +10,8 @@ export const get = async ({ url }) => {
   }
 
   for (let [path, resolver] of Object.entries(modules)) {
-    const slug = getPath(path);
+    const slug = path.replace("../../posts/", "").replace("/+page.md", "");
+
     const promise = resolver().then((post) => ({
       slug,
       ...post.metadata,
@@ -27,8 +26,6 @@ export const get = async ({ url }) => {
     .slice(0, limit);
 
   publishedPosts.sort((a, b) => (new Date(a.date) > new Date(b.date) ? -1 : 1));
-
-  return {
-    body: publishedPosts.slice(0, limit),
-  };
+  const data = publishedPosts.slice(0, limit);
+  return new Response(JSON.stringify(data));
 };

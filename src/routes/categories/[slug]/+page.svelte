@@ -1,25 +1,8 @@
-<script context="module">
-  export const load = async ({ stuff, params }) => {
-    const { slug } = params;
-    const { posts } = stuff;
-    const title = slug;
-    const filteredPosts = posts.filter((post) => {
-      return post.categories.includes(slug);
-    });
-
-    return {
-      props: {
-        posts: filteredPosts,
-        title,
-      },
-    };
-  };
-</script>
-
 <script>
   import PostItem from "$lib/components/PostItem.svelte";
   import { siteTitle } from "$lib/constants";
-  export let posts, title;
+  export let data;
+  const { posts, title } = data;
 </script>
 
 <h1>Category: {title}</h1>

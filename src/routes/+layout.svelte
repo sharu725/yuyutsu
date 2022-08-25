@@ -1,22 +1,7 @@
-<script context="module">
-  export const load = async ({ fetch }) => {
-    // Use a `limit` querystring parameter to fetch a limited number of posts
-    // e.g. fetch('posts.json?limit=5') for 5 most recent posts
-    const res = await fetch("/api/posts.json");
-    const posts = await res.json();
-
-    return {
-      stuff: {
-        posts,
-      },
-    };
-  };
-</script>
-
 <script>
-  import "../../static/reset.css";
-  import "../../static/global.css";
-  import "../../static/syntax-highlight.css";
+  import "$lib/css/reset.css";
+  import "$lib/css/global.css";
+  import "$lib/css/syntax-highlight.css";
   import SidebarToggle from "$lib/components/SidebarToggle.svelte";
   import Sidebar from "$lib/components/Sidebar.svelte";
   import { isSidebarOpen } from "$lib/stores";

@@ -5,8 +5,6 @@
   import { theme, themeChanger } from "$lib/stores";
 
   $: pathname = $page.url.pathname;
-
-  $: console.log($theme);
 </script>
 
 <nav>
@@ -26,7 +24,8 @@
       <a
         href={"#"}
         on:click={() => ($theme = $theme == "light" ? "dark" : "light")}
-        data-change={$themeChanger}>{$theme ? "Light" : "Dark"} Mode</a
+        data-change={$themeChanger}
+        >{$theme == "dark" ? "Light" : "Dark"} Mode</a
       >
     </li>
   </ul>

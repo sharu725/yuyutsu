@@ -4,7 +4,6 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "package": "vite package",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -14,9 +13,7 @@
     "mdsvex": "^0.10.5",
     "svelte": "^3.44.0",
     "svelte-preprocess": "^4.10.1",
-    "svelte-themes": "^0.0.98",
-    "tailwindcss": "^3.0.7",
-    "unocss": "^0.24.4"
+    "tailwindcss": "^3.0.7"
   },
   "type": "module"
 }

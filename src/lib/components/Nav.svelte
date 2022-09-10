@@ -2,7 +2,7 @@
   import { menu } from "$lib/constants";
   import { base } from "$app/paths";
   import { page } from "$app/stores";
-  import themeStore, { setTheme } from "svelte-themes";
+  import { isDark, themeChanger } from "$lib/stores";
 
   $: pathname = $page.url.pathname;
 </script>
@@ -13,7 +13,7 @@
       <li>
         <a
           rel={url.match("http") ? "noopener noreferrer" : ""}
-          sveltekit:prefetch={url.match("http") ? null : true}
+          data-sveltekit-prefetch={url.match("http") ? null : true}
           class:active={url !== "/" ? pathname.match(url) : url === pathname}
           href="{base}{url}"
           {target}>{title}</a
@@ -23,9 +23,8 @@
     <li>
       <a
         href={"#"}
-        on:click={() =>
-          setTheme(`${$themeStore.theme === "dark" ? "light" : "dark"}`)}
-        >{$themeStore.theme === "dark" ? "Light" : "Dark"} Mode</a
+        on:click={() => ($isDark = !$isDark)}
+        data-change={$themeChanger}>{$isDark ? "Light" : "Dark"} Mode</a
       >
     </li>
   </ul>

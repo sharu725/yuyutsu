@@ -10,7 +10,7 @@ description: "A minimal Sveltekit theme with a sidebar."
   import { siteTitle, siteDescription } from "$lib/constants";
   export let data;
 
-  const { posts } = data
+  $: ({ posts } = data)
 </script>
 
 {#each posts as post}

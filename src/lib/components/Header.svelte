@@ -5,7 +5,7 @@
 
 <div class="header-container">
   <header class="container">
-    <a sveltekit:prefetch href="{base}/"><h1>{siteTitle}</h1></a>
+    <a data-sveltekit-prefetch href="{base}/"><h1>{siteTitle}</h1></a>
   </header>
 </div>
 

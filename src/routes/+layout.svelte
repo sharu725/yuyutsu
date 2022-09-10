@@ -5,7 +5,6 @@
   import SidebarToggle from "$lib/components/SidebarToggle.svelte";
   import Sidebar from "$lib/components/Sidebar.svelte";
   import { isSidebarOpen } from "$lib/stores";
-  import SvelteTheme from "svelte-themes/SvelteTheme.svelte";
   import Header from "$lib/components/Header.svelte";
 </script>
 
@@ -19,8 +18,6 @@
     </article>
   </main>
 </div>
-
-<SvelteTheme />
 
 <style>
   .wrapper {

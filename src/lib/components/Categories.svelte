@@ -5,7 +5,7 @@
 <ul class="categories">
   {#each categories as category}
     <li>
-      <a sveltekit:prefetch href={`/categories/${category}`}>{category}</a>
+      <a data-sveltekit-prefetch href={`/categories/${category}`}>{category}</a>
     </li>
   {/each}
 </ul>

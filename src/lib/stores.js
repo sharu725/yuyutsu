@@ -3,7 +3,7 @@ import { browser } from "$app/environment";
 
 export const isSidebarOpen = writable(false);
 
-export const theme = writable(browser && localStorage.yuyutsuTheme);
+export const theme = writable(browser ? localStorage.yuyutsuTheme : "light");
 theme.subscribe((val) => browser && (localStorage.yuyutsuTheme = val));
 
 export const changeTheme = (theme) => {

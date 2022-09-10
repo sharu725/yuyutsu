@@ -22,7 +22,7 @@
     {/each}
     <li>
       <a
-        href={"#"}
+        href={""}
         on:click={() => ($theme = $theme == "light" ? "dark" : "light")}
         data-change={$themeChanger}
         >{$theme == "dark" ? "Light" : "Dark"} Mode</a

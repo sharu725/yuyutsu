@@ -2,9 +2,11 @@
   import { menu } from "$lib/constants";
   import { base } from "$app/paths";
   import { page } from "$app/stores";
-  import { isDark, themeChanger } from "$lib/stores";
+  import { theme, themeChanger } from "$lib/stores";
 
   $: pathname = $page.url.pathname;
+
+  $: console.log($theme);
 </script>
 
 <nav>
@@ -23,8 +25,8 @@
     <li>
       <a
         href={"#"}
-        on:click={() => ($isDark = !$isDark)}
-        data-change={$themeChanger}>{$isDark ? "Light" : "Dark"} Mode</a
+        on:click={() => ($theme = $theme == "light" ? "dark" : "light")}
+        data-change={$themeChanger}>{$theme ? "Light" : "Dark"} Mode</a
       >
     </li>
   </ul>

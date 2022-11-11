@@ -20,14 +20,15 @@
         >
       </li>
     {/each}
-    <li>
+    <!-- TODO: fix them switching without flashes -->
+    <!-- <li>
       <a
         href={""}
         on:click={() => ($theme = $theme == "light" ? "dark" : "light")}
         data-change={$themeChanger}
         >{$theme == "dark" ? "Light" : "Dark"} Mode</a
       >
-    </li>
+    </li> -->
   </ul>
 </nav>
 

@@ -2,7 +2,7 @@
   import { menu } from "$lib/constants";
   import { base } from "$app/paths";
   import { page } from "$app/stores";
-  import { theme, themeChanger } from "$lib/stores";
+  // import { theme, themeChanger } from "$lib/stores";
 
   $: pathname = $page.url.pathname;
 </script>

@@ -3,6 +3,7 @@
   import Categories from "$lib/components/Categories.svelte";
   import { siteTitle } from "$lib/constants";
 
+  export let data;
   export let title, description, date, categories, edit, image;
 
   const seo = {
@@ -10,6 +11,8 @@
     description,
     image,
   };
+
+  $: recentPosts = data.posts
 </script>
 
 <Seo {...seo} />

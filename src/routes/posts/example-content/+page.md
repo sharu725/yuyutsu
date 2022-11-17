@@ -6,7 +6,7 @@ categories:
   - nature
   - html
 date: "10th April 2021"
-edit: https://github.com/sharu725/yuyutsu/edit/master/src/routes/posts/secondpost.md
+edit: https://github.com/sharu725/yuyutsu/blob/master/src/routes/posts/example-content/%2Bpage.md
 image: https://picsum.photos/id/1083/800/350
 ---
 

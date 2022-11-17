@@ -7,7 +7,7 @@ categories:
   - space
 date: "3rd April 2021"
 published: true
-edit: https://github.com/sharu725/yuyutsu/edit/master/src/routes/posts/firstpost.md
+edit: https://github.com/sharu725/yuyutsu/blob/master/src/routes/posts/second-post/%2Bpage.md
 image: https://picsum.photos/id/342/800/350
 ---
 

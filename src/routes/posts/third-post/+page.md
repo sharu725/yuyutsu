@@ -6,7 +6,7 @@ categories:
   - nature
   - bird
 date: "1st May 2021"
-edit: https://github.com/sharu725/yuyutsu/edit/master/src/routes/posts/third-post.md
+edit: https://github.com/sharu725/yuyutsu/blob/master/src/routes/posts/third-post/%2Bpage.md
 image: https://picsum.photos/id/656/800/350
 ---
 

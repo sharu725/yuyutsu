@@ -13,7 +13,7 @@ description: "A minimal Sveltekit theme with a sidebar."
   
   export let data;
 
-  $: ({ posts } = data)
+  $: ({ posts } = data);
 </script>
 
 {#each $paginatedPosts as post}

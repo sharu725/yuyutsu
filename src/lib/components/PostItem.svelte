@@ -1,7 +1,7 @@
 <script>
   import Categories from "$lib/components/Categories.svelte";
   export let post;
-  const { title, description, slug, categories, image } = post;
+  $: ({ title, description, slug, categories, image } = post);
 </script>
 
 <div class="post-item">
@@ -25,9 +25,6 @@
   }
   h2 {
     font-size: 1.8rem;
-  }
-  p {
-    text-align: justify;
   }
   img {
     object-fit: cover;

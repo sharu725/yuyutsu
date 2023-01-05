@@ -7,7 +7,11 @@
 
   let numberOfPages = Math.ceil(items.length / itemsPerPage);
 
-  $: $paginatedPosts = items?.slice(currentPage - 1, itemsPerPage);
+  const paginate = (array, page_size, page_number) => {
+    return array.slice((page_number - 1) * page_size, page_number * page_size);
+  };
+
+  $: $paginatedPosts = paginate(items, 2, currentPage);
 </script>
 
 <nav>

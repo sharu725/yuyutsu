@@ -25,7 +25,9 @@
     height: 100vh;
     background-color: var(--sidebar-bg);
     font-size: 1rem;
+    z-index: 9999;
   }
+  
   h1 {
     color: #ddd;
     font-weight: bold;
@@ -43,11 +45,11 @@
 
   @media screen and (max-width: 800px) {
     .sidebar {
-      left: -14rem;
-      width: 14rem;
+      left: -20rem;
+      width: 20rem;
     }
     .show {
-      transform: translateX(14rem);
+      transform: translateX(20rem);
     }
   }
 </style>

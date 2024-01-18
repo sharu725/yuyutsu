@@ -6,6 +6,7 @@
   const handleClickOutside = () => {
     if ($isSidebarOpen) {
       $isSidebarOpen = false;
+      direction = "";
     }
   };
 
@@ -16,6 +17,7 @@
   } else if (direction == "left") {
     $isSidebarOpen = false;
   }
+
 </script>
 
 <div

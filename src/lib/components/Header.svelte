@@ -27,6 +27,7 @@
   @media screen and (max-width: 800px) {
     header h1 {
       text-align: center;
+      margin: 0.35rem 0;
     }
   }
 </style>

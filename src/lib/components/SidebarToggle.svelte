@@ -17,7 +17,6 @@
   } else if (direction == "left") {
     $isSidebarOpen = false;
   }
-
 </script>
 
 <div
@@ -92,7 +91,15 @@
 
   @media screen and (max-width: 800px) {
     .sidebar-toggle {
-      margin: 1rem;
+      margin: 1.5rem;
+    }
+    label {
+      width: 30px;
+    }
+
+    label span {
+      height: 2px;
+      margin: 3px 0;
     }
   }
 </style>

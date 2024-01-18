@@ -88,6 +88,7 @@ img {
   max-width: 100%;
   filter: var(--image-filter);
 }
+
 button {
   display: inline-block;
   outline: 0;
@@ -102,6 +103,7 @@ button {
   height: 36px;
   transition: all 80ms linear;
 }
+
 button:hover {
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%);
   background: rgba(248, 248, 248, 1);
@@ -157,4 +159,12 @@ hr {
   padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+@media screen and (max-width: 800px) {
+  body, p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
 }

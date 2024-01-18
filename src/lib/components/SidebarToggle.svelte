@@ -1,12 +1,21 @@
 <script>
   import { isSidebarOpen } from "$lib/stores";
   import clickOutside from "$lib/utils/clickOutside";
+  import Swipe from "$lib/components/Swipe.svelte";
 
   const handleClickOutside = () => {
     if ($isSidebarOpen) {
       $isSidebarOpen = false;
     }
   };
+
+  let direction;
+
+  $: if (direction == "right") {
+    $isSidebarOpen = true;
+  } else if (direction == "left") {
+    $isSidebarOpen = false;
+  }
 </script>
 
 <div
@@ -21,6 +30,7 @@
     <span />
   </label>
 </div>
+<Swipe bind:direction />
 
 <style>
   .sidebar-toggle {

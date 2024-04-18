@@ -170,16 +170,24 @@ title: Choropleth
 
 <main>
     <!-- Container to render the SVG -->
-    <div bind:this={svgContainer} />
+    <div class="container">
+        <div bind:this={svgContainer} />
 
-    <!-- Color options buttons -->
-    <div class="color-options">
-        <button on:click={() => updateColor("black")}>Black</button>
-        <button on:click={() => updateColor("red")}>Red</button>
-        <button on:click={() => updateColor("blue")}>Blue</button>
-        <button on:click={() => updateColor("green")}>Green</button>
+        <!-- Color options buttons -->
+        <div class="color-options">
+            <button on:click={() => updateColor("black")}>Black</button>
+            <button on:click={() => updateColor("red")}>Red</button>
+            <button on:click={() => updateColor("blue")}>Blue</button>
+            <button on:click={() => updateColor("green")}>Green</button>
+        </div>
     </div>
 </main>
+
+<style>
+    .container {
+        overflow: auto;
+    }
+</style>
 
 ```md
 Do hirings vary from region to region?

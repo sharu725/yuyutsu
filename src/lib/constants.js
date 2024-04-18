@@ -12,18 +12,22 @@ export const menu = [
     url: "/about",
   },
   {
-    title: "Contact",
-    url: "/contact",
+    title: "Choropleth",
+    url: "/choropleth",
   },
   {
-    title: "Github",
+    title: "Piechart",
+    url: "/piechart",
+  },
+  {
+    title: "Demonstration Video",
     url: "https://github.com/sharu725/yuyutsu",
     target: "_blank",
   },
 ];
 
-export const siteTitle = "Yuyutsu";
-export const siteDescription = "A minimal Sveltekit theme with a sidebar.";
+export const siteTitle = "GradVizz";
+export const siteDescription = "Decoding Engineering Careers";
 
 export const footerText =
-  /* <Current Year> is already prefixed */ "All rights reserved";
+  /* <Current Year> is already prefixed */ "Team GradVizz";

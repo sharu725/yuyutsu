@@ -8,21 +8,25 @@
 
   const seo = {
     title: `${title} | ${siteTitle}`,
-    description,
+    // description,
     image,
   };
 
-  $: recentPosts = data.posts
+  $: recentPosts = data.posts;
 </script>
 
 <Seo {...seo} />
 
 <h1>{title}</h1>
-<p class="date">{date}</p>
+<!-- <p class="date">{date}</p> -->
 <Categories {categories} />
-<img width="800" height="300" src={image} alt={title} />
+<div class="flex align-middle justify-center my-11">
+  <img width="500" height="300" src={image} alt={title} />
+  <p class="self-center mx-2">{description}</p>
+</div>
 <slot />
-<p class="edit"><a href={edit} target="_blank">Edit this page</a></p>
+
+<!-- <p class="edit"><a href={edit} target="_blank">Open the Visualisation</a></p> -->
 
 <style>
   .date {
@@ -38,8 +42,10 @@
     margin-left: auto;
   }
   img {
-    object-fit: cover;
-    object-position: center;
+    /* object-fit: cover;
+    object-position: center; */
+    /*rounded border*/
+    border-radius: 10px;
   }
 
   @media screen and (max-width: 800px) {

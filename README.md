@@ -1,3 +1,5 @@
+# Data Visualisation Final Project
+
 ## Usage
 
 - run `npm install` to install all the dependencies.

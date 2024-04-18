@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Home
-description: "A minimal Sveltekit theme with a sidebar."
+title: Our Vizz
+description: "AMCAT Exam Visualisations"
 ---
 
 <script>

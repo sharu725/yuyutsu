@@ -5,7 +5,7 @@
   const { posts, title } = data;
 </script>
 
-<h1>Category: {title}</h1>
+<h1>Idiom: {title}</h1>
 {#each posts as post}
   <PostItem {post} />
 {/each}

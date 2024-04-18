@@ -1,9 +1,3 @@
----
-layout: default
-title: Choropleth
----
-
-## Regional Hiring Trends
 <script>
     import { onMount } from "svelte";
     import * as d3 from "d3";
@@ -188,7 +182,3 @@ title: Choropleth
         overflow: auto;
     }
 </style>
-
-```md
-Do hirings vary from region to region?
-```

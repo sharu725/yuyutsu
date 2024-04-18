@@ -4,24 +4,20 @@ export const menu = [
     url: "/",
   },
   {
-    title: "Categories",
+    title: "Idioms",
     url: "/categories",
   },
   {
-    title: "About",
-    url: "/about",
+    title: "Team",
+    url: "/team",
   },
   {
-    title: "Choropleth",
-    url: "/choropleth",
-  },
-  {
-    title: "Piechart",
-    url: "/piechart",
+    title: "Report",
+    url: "/report",
   },
   {
     title: "Demonstration Video",
-    url: "https://github.com/sharu725/yuyutsu",
+    url: "https://youtu.be/fhXzsT45oNA",
     target: "_blank",
   },
 ];

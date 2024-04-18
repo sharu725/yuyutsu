@@ -2,6 +2,7 @@ import { mdsvex } from "mdsvex";
 import mdsvexConfig from "./mdsvex.config.js";
 import preprocess from "svelte-preprocess";
 import vercel from "@sveltejs/adapter-vercel";
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 // const dev = process.env.NODE_ENV === "development";
 
 const config = {
@@ -16,7 +17,7 @@ const config = {
     // appDir: "app",
   },
 
-  preprocess: [preprocess({}), mdsvex(mdsvexConfig)],
+  preprocess: [preprocess({}), mdsvex(mdsvexConfig), vitePreprocess()],
 };
 
 export default config;

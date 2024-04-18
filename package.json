@@ -9,11 +9,12 @@
   "devDependencies": {
     "@sveltejs/adapter-vercel": "^1.0.6",
     "@sveltejs/kit": "^1.30.4",
-    "autoprefixer": "^10.4.17",
+    "autoprefixer": "^10.4.19",
     "mdsvex": "^0.10.6",
+    "postcss": "^8.4.38",
     "svelte": "^3.59.2",
     "svelte-preprocess": "^4.10.7",
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "^3.4.3",
     "vite": "^4.5.2"
   },
   "type": "module",

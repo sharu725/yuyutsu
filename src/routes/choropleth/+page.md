@@ -172,14 +172,14 @@ title: Choropleth
     <!-- Container to render the SVG -->
     <div class="container">
         <div bind:this={svgContainer} />
+    </div>
 
-        <!-- Color options buttons -->
-        <div class="color-options">
-            <button on:click={() => updateColor("black")}>Black</button>
-            <button on:click={() => updateColor("red")}>Red</button>
-            <button on:click={() => updateColor("blue")}>Blue</button>
-            <button on:click={() => updateColor("green")}>Green</button>
-        </div>
+    <!-- Color options buttons -->
+    <div class="color-options">
+        <button on:click={() => updateColor("black")}>Black</button>
+        <button on:click={() => updateColor("red")}>Red</button>
+        <button on:click={() => updateColor("blue")}>Blue</button>
+        <button on:click={() => updateColor("green")}>Green</button>
     </div>
 </main>
 

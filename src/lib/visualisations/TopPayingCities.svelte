@@ -1,13 +1,17 @@
 <script>
-    import { onMount } from "svelte";
+    import { onMount, afterUpdate } from "svelte";
     import * as d3 from "d3";
 
-    let data, chartContainer, tooltip, selectedCity, gradientScheme;
+    let data,
+        chartContainer,
+        tooltip,
+        selectedCity,
+        useUniqueColors = true;
     let width = 800;
     let height = 600;
     let radius = Math.min(width, height) / 2;
     let colorScale;
-    let topJobCities; // Declare topJobCities here
+    let topJobCities;
 
     onMount(async () => {
         data = await d3.csv("/dataset.csv");
@@ -25,6 +29,10 @@
             .sort((a, b) => b[1] - a[1])
             .slice(0, 10);
 
+        updateChart();
+    });
+
+    afterUpdate(() => {
         updateChart();
     });
 
@@ -47,10 +55,12 @@
             .append("g")
             .attr("transform", `translate(${width / 2}, ${height / 2})`);
 
-        colorScale = d3
-            .scaleOrdinal()
-            .domain(jobCityNames)
-            .range(d3.schemeCategory10);
+        colorScale = useUniqueColors
+            ? d3.scaleOrdinal().domain(jobCityNames).range(d3.schemeCategory10)
+            : d3
+                  .scaleLinear()
+                  .domain([0, d3.max(jobCityAverageSalaries)])
+                  .range(["#cce5ff", "#003399"]);
 
         const arc = d3
             .arc()
@@ -74,7 +84,7 @@
 
         arcs.append("path")
             .attr("d", arc)
-            .attr("fill", (d, i) => getColor(jobCityNames[i]))
+            .attr("fill", (d, i) => getColor(d.data, jobCityNames[i]))
             .on("mouseover", (event, d) => {
                 d3.select(event.currentTarget)
                     .transition()
@@ -108,8 +118,6 @@
             .style("fill", "#333")
             .text("Average Salary in Top 10 Highest Paying JobCities");
 
-        drawLegend(svg);
-
         tooltip = d3
             .select("body")
             .append("div")
@@ -117,56 +125,8 @@
             .style("display", "none");
     }
 
-    function drawLegend(svg) {
-        const legend = svg
-            .append("g")
-            .attr("class", "legend")
-            .attr("transform", `translate(${width / 2}, ${height / 2 + 100})`);
-
-        const legendSize = 20;
-        const legendSpacing = 30;
-
-        const legendValues = d3.range(0, 1.1, 0.1);
-
-        legend
-            .selectAll("rect")
-            .data(legendValues)
-            .enter()
-            .append("rect")
-            .attr("x", (d, i) => i * legendSpacing)
-            .attr("y", 0)
-            .attr("width", legendSize)
-            .attr("height", legendSize)
-            .attr("fill", (d) =>
-                gradientScheme ? getGradientColor(d) : colorScale(d),
-            );
-
-        legend
-            .selectAll("text")
-            .data(legendValues)
-            .enter()
-            .append("text")
-            .attr("x", (d, i) => i * legendSpacing)
-            .attr("y", legendSize * 2)
-            .text((d) => d3.format(".1f")(d))
-            .style("font-size", "12px")
-            .attr("dy", "0.35em");
-    }
-
-    function getColor(city) {
-        return gradientScheme
-            ? getGradientColor(colorScale(city))
-            : colorScale(city);
-    }
-
-    function getGradientColor(value) {
-        const scale = d3
-            .scaleLinear()
-            .domain([d3.min(colorScale.range()), d3.max(colorScale.range())])
-            .range([0, 1]);
-
-        const t = scale(value);
-        return d3.interpolate("#cce5ff", "#003399")(t);
+    function getColor(value, cityName) {
+        return useUniqueColors ? colorScale(cityName) : colorScale(value);
     }
 </script>
 
@@ -176,14 +136,16 @@
             bind:this={chartContainer}
             style="width: 800px; height: 600px; position: relative; overflow: auto;"
         />
-        {#if selectedCity}
-            <div class="analytics" style="margin-left: 20px;">
-                <h2>{selectedCity}</h2>
-                <!-- Add additional analytics here if needed -->
-            </div>
-        {/if}
     </div>
 </main>
+
+<div class="controls" style="text-align: center;">
+    <button on:click={() => (useUniqueColors = !useUniqueColors)}>
+        {useUniqueColors
+            ? "Linear Gradient Color Scheme"
+            : "Original Color Scheme"}
+    </button>
+</div>
 
 <style>
     .tooltip {
@@ -204,16 +166,13 @@
         opacity: 0.7;
     }
 
-    .analytics {
-        position: absolute;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .legend text {
-        fill: #333;
-        font-size: 12px;
+    .controls button {
+        margin-bottom: 10px;
     }
 </style>

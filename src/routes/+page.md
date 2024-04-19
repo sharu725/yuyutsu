@@ -16,8 +16,22 @@ description: "AMCAT Exam Visualisations"
   $: ({ posts } = data);
 </script>
 
-{#each $paginatedPosts as post}
-  <PostItem {post} />
-{/each}
+<div class="post-container">
+  {#each $paginatedPosts as post}
+    <PostItem {post} />
+  {/each}
+</div>
+
+<style>
+  .post-container {
+    display: flex;
+  }
+
+   @media (max-width: 768px) {
+    .post-container {
+      flex-wrap: wrap;
+    }
+  }
+</style>
 
 <Pagination items={posts} itemsPerPage={2} />

@@ -26,7 +26,8 @@
 </div>
 <slot />
 
-<!-- <p class="edit"><a href={edit} target="_blank">Open the Visualisation</a></p> -->
+<!-- <p class="edit"><a href={edit} target="_blank">Go to Home</a></p> -->
+<p class="edit"><a href="/">Go to Home</a></p>
 
 <style>
   .date {

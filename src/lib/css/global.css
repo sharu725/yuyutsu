@@ -174,3 +174,21 @@ hr {
     line-height: 1.6;
   }
 }
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+  font:
+    16px Arial,
+    sans-serif;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.arc:hover {
+  opacity: 0.7;
+}

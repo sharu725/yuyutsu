@@ -92,24 +92,30 @@
 
         // Create x-axis
         const xAxis = d3.axisBottom(xScale);
-        svg.append("g")
+        const xAxisGroup = svg
+            .append("g")
             .attr("transform", `translate(0, ${height - 50})`)
-            .call(xAxis)
-            .append("text")
+            .call(xAxis);
+
+        // Append the label to the SVG container
+        svg.append("text")
             .attr("x", width / 2)
-            .attr("y", 40)
+            .attr("y", height - 20)
             .style("text-anchor", "middle")
             .text("Average Score");
 
         // Create y-axis
         const yAxis = d3.axisLeft(yScale);
-        svg.append("g")
+        const yAxisGroup = svg
+            .append("g")
             .attr("transform", "translate(50,0)")
-            .call(yAxis)
-            .append("text")
+            .call(yAxis);
+
+        // Append the label to the SVG container
+        svg.append("text")
             .attr("transform", "rotate(-90)")
             .attr("x", -height / 2)
-            .attr("y", -30)
+            .attr("y", 17)
             .style("text-anchor", "middle")
             .text("Frequency");
 

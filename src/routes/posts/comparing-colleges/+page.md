@@ -5,7 +5,7 @@ description: ""
 categories:
   - radarchart
 published: true
-image: https://media.istockphoto.com/id/1316195221/vector/graduation-cap-and-education-diploma-vector-icon.jpg?s=612x612&w=0&k=20&c=PRQ2WYdKZEY5p5R1Kkbv1_1OTNSN8GoaXhins4WxO_U= 
+image: https://er.educause.edu/-/media/images/articles/2021/3/er21_2104_headerart_1600x900.jpg?hash=00FC032BB2821FDC026F790E887F0F307003E8E4
 ---
 
 <script>
@@ -14,6 +14,4 @@ image: https://media.istockphoto.com/id/1316195221/vector/graduation-cap-and-edu
 
 <ComparingColleges />
 
-# HEyyeyey2urh
- this is test to be filled later reg radar plot.
-  tier one smarter than tier 2.
+# TODO

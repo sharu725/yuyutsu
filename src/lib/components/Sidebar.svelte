@@ -27,7 +27,7 @@
     font-size: 1rem;
     z-index: 9999;
   }
-  
+
   h1 {
     color: #ddd;
     font-weight: bold;
@@ -45,11 +45,11 @@
 
   @media screen and (max-width: 800px) {
     .sidebar {
-      left: -20rem;
-      width: 20rem;
+      left: -16rem;
+      width: 16rem;
     }
     .show {
-      transform: translateX(20rem);
+      transform: translateX(16rem);
     }
   }
 </style>

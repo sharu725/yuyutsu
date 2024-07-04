@@ -31,13 +31,4 @@
   article {
     margin: 2rem auto;
   }
-  .show {
-    transform: translateX(18rem);
-  }
-
-  @media screen and (max-width: 800px) {
-    .show {
-      transform: translateX(14rem);
-    }
-  }
 </style>

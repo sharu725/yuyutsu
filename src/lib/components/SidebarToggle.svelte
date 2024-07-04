@@ -94,12 +94,19 @@
       margin: 1.5rem;
     }
     label {
-      width: 30px;
+      width: 32px;
     }
 
     label span {
       height: 2px;
       margin: 3px 0;
+    }
+
+    input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+      transform: rotatez(45deg) translate(4px, 0px);
+    }
+    input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+      transform: translate(13px, -3px) rotatez(45deg);
     }
   }
 </style>

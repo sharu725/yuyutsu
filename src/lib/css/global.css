@@ -161,10 +161,18 @@ hr {
   margin-right: auto;
 }
 
+.show {
+  transform: translateX(18rem);
+}
 
 @media screen and (max-width: 800px) {
-  body, p {
+  body,
+  p {
     font-size: 18px;
     line-height: 1.6;
+  }
+
+  .show {
+    transform: translateX(16rem);
   }
 }

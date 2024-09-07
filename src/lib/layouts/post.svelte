@@ -12,7 +12,7 @@
     image,
   };
 
-  $: recentPosts = data.posts
+  $: recentPosts = data.posts;
 </script>
 
 <Seo {...seo} />
@@ -21,7 +21,9 @@
 <p class="date">{date}</p>
 <Categories {categories} />
 <img width="800" height="300" src={image} alt={title} />
-<slot />
+<article>
+  <slot />
+</article>
 <p class="edit"><a href={edit} target="_blank">Edit this page</a></p>
 
 <style>

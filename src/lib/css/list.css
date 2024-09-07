@@ -1,0 +1,31 @@
+article {
+    ul {
+        list-style-type: disc;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    ul,
+    ol {
+        padding-left: 2rem;
+        margin: 1rem 0;
+    }
+
+    dl {
+        border: 1px solid #eee;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    dt {
+        font-weight: 600;
+    }
+
+    dd,
+    ul,
+    ol {
+        font-size: 90%;
+    }
+}

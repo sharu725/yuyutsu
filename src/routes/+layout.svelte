@@ -1,7 +1,5 @@
 <script>
-  import "$lib/css/reset.css";
   import "$lib/css/global.css";
-  import "$lib/css/syntax-highlight.css";
   import SidebarToggle from "$lib/components/SidebarToggle.svelte";
   import Sidebar from "$lib/components/Sidebar.svelte";
   import { isSidebarOpen } from "$lib/stores";
@@ -13,9 +11,9 @@
   <main class:show={$isSidebarOpen}>
     <SidebarToggle />
     <Header />
-    <article class="container">
+    <div class="container">
       <slot />
-    </article>
+    </div>
   </main>
 </div>
 
@@ -24,11 +22,12 @@
     display: flex;
     overflow: hidden;
   }
+
   main {
     width: 100%;
   }
 
-  article {
+  .container {
     margin: 2rem auto;
   }
 </style>

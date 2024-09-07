@@ -1,3 +1,8 @@
+@import url(./reset.css);
+@import url(./table.css);
+@import url(./list.css);
+@import url(./syntax-highlight.css);
+
 :root {
   --bg-color: #fff;
   --bg-light: #f1f1f1;
@@ -126,24 +131,6 @@ pre {
   white-space: pre-line;
 }
 
-/* Tables */
-table {
-  margin-bottom: 1rem;
-  width: 100%;
-  border: 1px solid #e5e5e5;
-  border-collapse: collapse;
-}
-
-td,
-th {
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #e5e5e5;
-}
-
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
-}
 
 hr {
   position: relative;
@@ -166,6 +153,7 @@ hr {
 }
 
 @media screen and (max-width: 800px) {
+
   body,
   p {
     font-size: 18px;

@@ -1,7 +1,7 @@
 <script>
   import PostItem from "$lib/components/PostItem.svelte";
   import { siteTitle } from "$lib/constants";
-  export let data;
+  let { data } = $props();
   const { posts, title } = data;
 </script>
 

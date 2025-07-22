@@ -16,7 +16,7 @@ description: "A minimal Sveltekit theme with a sidebar."
   $: ({ posts } = data);
 </script>
 
-{#each $paginatedPosts as post}
+{#each $paginatedPosts as post(post)}
   <PostItem {post} />
 {/each}
 

@@ -4,6 +4,8 @@
   import Sidebar from "$lib/components/Sidebar.svelte";
   import { isSidebarOpen } from "$lib/stores";
   import Header from "$lib/components/Header.svelte";
+
+  let { children } = $props();
 </script>
 
 <div class="wrapper overflow-hidden">
@@ -12,7 +14,7 @@
     <SidebarToggle />
     <Header />
     <div class="container">
-      <slot />
+      {@render children?.()}
     </div>
   </main>
 </div>
